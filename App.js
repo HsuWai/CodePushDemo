@@ -27,13 +27,8 @@ const instructions = Platform.select({
 });
 
 class App extends Component {
-  async componentWillMount() {
-    const crashReport = await Crashes.isEnabled();
-    alert(crashReport);
-  }
-
   testCrash = () => {
-    Crashes.generateTestCrash();
+    //Crashes.generateTestCrash();
     throw new Error("This is a test javascript crash!");
   };
 
