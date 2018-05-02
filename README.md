@@ -1,7 +1,7 @@
 # CodePushDemo
 Demo Code Push for React Native Apps
 
-Prerequisites
+# Prerequisites
 1. Initially, create react native project normally.
 > react-native init <app-name>
 
@@ -19,7 +19,7 @@ Prerequisites
 
    ---------------------------
    
-#Set Up
+# Set Up
 1. Install appcenter-cli globally.
 > npm install -g appcenter-cli
 
@@ -72,7 +72,7 @@ eg. appcenter apps create -d MyApp -o Android -p React-Native
 
       export default App
 
-*** Finished Integration ***
+*** *****Finished Integration *** ******
  
 - Build release version and Install on device.
 > cd android
