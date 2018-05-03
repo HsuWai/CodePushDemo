@@ -19,6 +19,9 @@ let codePushOptions = {
   checkFrequency: codePush.CheckFrequency.ON_APP_RESUME,
   installMode: codePush.InstallMode.ON_NEXT_RESUME
 };
+
+let person = { name: "Hsu Wai", age: "24" };
+
 const instructions = Platform.select({
   ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
   android:
@@ -27,9 +30,14 @@ const instructions = Platform.select({
 });
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  //For testing crash data
   testCrash = () => {
-    //Crashes.generateTestCrash();
-    throw new Error("This is a test javascript crash!");
+    var obj = undefined;
+    alert(obj.name.first);
   };
 
   render() {
@@ -43,14 +51,17 @@ class App extends Component {
         <TouchableOpacity
           style={{
             alignItems: "center",
-            padding: 10,
+            paddingTop: 10,
+            paddingBottom: 10,
+            paddingLeft: 30,
+            paddingRight: 30,
             justifyContent: "center",
             borderWidth: 1,
             borderRadius: 5
           }}
           onPress={() => this.testCrash()}
         >
-          <Text>Click</Text>
+          <Text>Click ME!!!</Text>
         </TouchableOpacity>
       </View>
     );
