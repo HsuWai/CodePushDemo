@@ -79,8 +79,8 @@ eg. appcenter apps create -d MyApp -o Android -p React-Native
 > .\gradlew assembleRelease 
 
 - Releasing updates and push via CLI
-> appcenter codepush release-react -a <ownerName>/<appName> -d <deploymentName> -t <targetBinaryVersion>
+> appcenter codepush release-react -a ownerName/appName -d deploymentName -t targetBinaryVersion
 
 - Check your application's deployment history using 
-> appcenter codepush deployment list -a <owner>/<app-name>
+> appcenter codepush deployment list -a owner/app-name
 
