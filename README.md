@@ -27,16 +27,16 @@ Demo Code Push for React Native Apps
 Reference - https://docs.microsoft.com/en-us/appcenter/distribution/codepush/cli
 
 3. Register your app via CLI or App Center Portal.
-> appcenter apps create -d <appDisplayName> -o <operatingSystem>  -p <platform>
+> appcenter apps create -d <appDisplayName> -o operatingSystem  -p platform
 eg. appcenter apps create -d MyApp -o Android -p React-Native
 
 4. With the original CodePush, apps automatically had two deployments (Staging and Production).
    In App Center, you'll have to create deployment keys yourself
-> appcenter codepush deployment add -a <ownerName>/<appName> Staging
-> appcenter codepush deployment add -a <ownerName>/<appName> Production
+> appcenter codepush deployment add -a ownerName/appName Staging
+> appcenter codepush deployment add -a ownerName/appName Production
 
    After that, you can access the deployment keys for both deployments using  
-> appcenter codepush deployment list -a <<ownername>>/<<appname>>
+> appcenter codepush deployment list -a ownername/appname
 
 5. Add App Center Client SDK in react-native project.
 > npm install appcenter appcenter-analytics appcenter-crashes --save
