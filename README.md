@@ -36,7 +36,7 @@ eg. appcenter apps create -d MyApp -o Android -p React-Native
 > appcenter codepush deployment add -a <ownerName>/<appName> Production
 
    After that, you can access the deployment keys for both deployments using  
-> appcenter codepush deployment list -a <ownerName>/<appName>
+> appcenter codepush deployment list -a <<ownerName>>/<appName>
 
 5. Add App Center Client SDK in react-native project.
 > npm install appcenter appcenter-analytics appcenter-crashes --save
